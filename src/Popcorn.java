@@ -67,7 +67,7 @@ public class Popcorn {
 			isCooked = true;
 		} else {
 			System.out.println("POP!" + kernels);
-			kernels--;
+			kernels --;
 		}
 	}
 
