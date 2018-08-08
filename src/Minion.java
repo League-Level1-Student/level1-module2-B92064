@@ -4,30 +4,39 @@ private String name;
 private int eyes;
 private String color;
 private String master;
+Minion(String name, int eyes, String color, String master){
+	this.name = name;
+	this.color = color;
+	this.eyes = eyes;
+	this.master = master;
 
-
+}
 public String getName() {
-	return "My name is "+ name;
+	return name;
 }
 public void setName(String name) {
 	this.name = name;
 }
-public String getEyes() {
-	return "I have " + eyes;
+public int getEyes() {
+	return eyes;
 }
 public void setEyes(int eyes) {
 	this.eyes = eyes;
 }
 public String getColor() {
-	return "I am the color "+ color;
+	return color;
 }
 public void setColor(String color) {
 	this.color = color;
 }
 public String getMaster() {
-	return "My master is "+ master;
+	return master;
 }
 public void setMaster(String master) {
 	this.master = master;
 }
+
+
+
+
 }
