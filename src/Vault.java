@@ -1,13 +1,10 @@
 
 public class Vault {
-	private int SecretCode = 193083;
+	private static int SecretCode = 193083;
 public static void main(String[] args) {
-	
+	tryCode(0);
 }
-	
-	
-	
-	private boolean tryCode(int i) {
+	private static boolean tryCode(int i) {
 		if(i == SecretCode) {
 			return true;
 		}
