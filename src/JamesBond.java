@@ -1,16 +1,22 @@
 
 public class JamesBond {
-	static Vault v = new Vault();
-	
+	 static Vault vault = new Vault();
 	public static void main(String[] args) {
-		
-		findCode(v);
+		JamesBond Bond = new JamesBond();
+		Bond.findCode(vault);
+	
 	}
 
 	
 	public static void findCode(Vault v) {
-		for(int i=0; i < 1000000; i++) {
-			
+		int code = -1;
+		for(int i = 0; i < 1000000; i++) {
+			vault.tryCode(i);
+			if(vault.tryCode(i) == true) {
+				code = i;
+				break;
+			}
 		}
-	}
-}
+		System.out.println(code);
+	}}
+
